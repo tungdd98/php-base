@@ -1,0 +1,12 @@
+RewriteEngine On
+#----------
+#admin
+RewriteRule ^admin$ admin.php
+#----------
+#client
+RewriteRule ^home$ /index.php [L]
+#----------
+#logout
+RewriteRule ^admin/logout$ admin.php?controller=logout
+#login
+RewriteRule ^login$ admin.php?controller=login
